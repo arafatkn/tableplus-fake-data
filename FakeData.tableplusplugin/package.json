@@ -1,0 +1,25 @@
+{
+  "name": "im.arafat.TablePlus.FakeData",
+  "version": "0.1.0",
+  "description": "This plugin helps you generate fake data using faker-js package.",
+  "main": "main.js",
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "webpack": "5.79.0"
+  },
+  "devDependencies": {
+    "babel-loader": "9.1.2",
+    "webpack": "5.79.0",
+    "webpack-cli": "5.0.1"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [
+    "TablePlus",
+    "Fake Data Generator",
+    "Dummy Data Generator"
+  ],
+  "author": "https://arafat.im",
+  "license": "MIT"
+}

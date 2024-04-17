@@ -1,0 +1,21 @@
+{
+  "name": "Insert Fake Data",
+  "identifier": "im.arafat.TablePlus.FakeData",
+  "version": "0.1.0",
+  "detail": "This plugin helps you generate fake data using faker-js package.",
+  "author": "Arafat Islam",
+  "authorEmail": "me@arafat.im",
+  "scripts": [
+    {
+      "location": "data",
+      "type": "separator"
+    },
+    {
+      "location": "data",
+      "type": "action",
+      "script": "dist.js",
+      "handler": "generate",
+      "name": "Insert Fake Data"
+    }
+  ]
+}
