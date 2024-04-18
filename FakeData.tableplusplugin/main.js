@@ -30,102 +30,102 @@ const setContent = function (context, content) {
   context.update();
 };
 
-function generateInt(context) {
+global.generateInt = function (context) {
   const content = faker.number.int();
   setContent(context, content);
 }
 
-function generateBigInt(context) {
+global.generateBigInt = function (context) {
   const content = faker.number.bigInt();
   setContent(context, content);
 }
 
-function generateDecimal(context) {
+global.generateDecimal = function (context) {
   const content = faker.number.float();
   setContent(context, content);
 }
 
-function generateWord(context) {
+global.generateWord = function (context) {
   const content = faker.lorem.word();
   setContent(context, content);
 }
 
-function generateLine(context) {
+global.generateLine = function (context) {
   const content = faker.lorem.lines(1);
   setContent(context, content);
 }
 
-function generateSlug(context) {
+global.generateSlug = function (context) {
   const content = faker.lorem.slug(5);
   setContent(context, content);
 }
 
-function generateSmallText(context) {
+global.generateSmallText = function (context) {
   const content = faker.string.alpha({ length: { min: 100, max: 500 } });
   setContent(context, content);
 }
 
-function generateMediumText(context) {
+global.generateMediumText = function (context) {
   const content = faker.string.alpha({ length: { min: 1000, max: 5000 } });
   setContent(context, content);
 }
 
-function generateLargeText(context) {
+global.generateLargeText = function (context) {
   const content = faker.string.alpha({ length: { min: 10000, max: 50000 } });
   setContent(context, content);
 }
 
-function generateIPv4(context) {
+global.generateIPv4 = function (context) {
   const content = faker.internet.ipv4();
   setContent(context, content);
 }
 
-function generateIPv6(context) {
+global.generateIPv6 = function (context) {
   const content = faker.internet.ipv6();
   setContent(context, content);
 }
 
-function generateCountry(context) {
+global.generateCountry = function (context) {
   const content = faker.location.country();
   setContent(context, content);
 }
-function generateCountryCode2(context) {
+global.generateCountryCode2 = function (context) {
   const content = faker.location.countryCode('alpha-2');
   setContent(context, content);
 }
 
-function generateCountryCode3(context) {
+global.generateCountryCode3 = function (context) {
   const content = faker.location.countryCode('alpha-3');
   setContent(context, content);
 }
 
-function generateCurrencyCode(context) {
+global.generateCurrencyCode = function (context) {
   const content = faker.finance.currencyCode();
   setContent(context, content);
 }
 
-function generateUUIDv4(context) {
+global.generateUUIDv4 = function (context) {
   const content = faker.string.uuid(); // UUIDv4
   setContent(context, content);
 }
 
-function generateULID(context) {
+global.generateULID = function (context) {
   const content = ulid(Date.now(), () => Math.random());
   setContent(context, content);
 }
 
-function generateMongoID(context) {
+global.generateMongoID = function (context) {
   const content = faker.database.mongodbObjectId();
   setContent(context, content);
 }
 
 // Dates
-function generatePastDate(context) {
+global.generatePastDate = function (context) {
   const content = faker.date.past();
   setContent(context, content);
 }
 
-function generateFutureDate(context) {
+global.generateFutureDate = function (context) {
   const content = faker.date.future();
   setContent(context, content);
 }
