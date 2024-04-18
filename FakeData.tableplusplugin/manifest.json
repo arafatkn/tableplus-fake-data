@@ -12,10 +12,142 @@
     },
     {
       "location": "data",
-      "type": "action",
-      "script": "dist.js",
-      "handler": "generate",
-      "name": "Insert Fake Data"
+      "type": "submenu",
+      "name": "Insert Fake Data",
+      "children": [
+        {
+          "type": "action",
+          "script": "dist.js",
+          "handler": "generateInt",
+          "name": "Integer Number"
+        },
+        {
+          "type": "action",
+          "script": "dist.js",
+          "handler": "generateBigInt",
+          "name": "Big Integer Number"
+        },
+        {
+          "type": "action",
+          "script": "dist.js",
+          "handler": "generateDecimal",
+          "name": "Decimal Number"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "action",
+          "script": "dist.js",
+          "handler": "generateWord",
+          "name": "Single Word"
+        },
+        {
+          "type": "action",
+          "script": "dist.js",
+          "handler": "generateLine",
+          "name": "One Line String"
+        },
+        {
+          "type": "action",
+          "script": "dist.js",
+          "handler": "generateSlug",
+          "name": "Slug"
+        },
+        {
+          "type": "action",
+          "script": "dist.js",
+          "handler": "generateSmallText",
+          "name": "Medium Text (~500 char)"
+        },
+        {
+          "type": "action",
+          "script": "dist.js",
+          "handler": "generateMediumText",
+          "name": "Medium Text (~5000 char)"
+        },
+        {
+          "type": "action",
+          "script": "dist.js",
+          "handler": "generateLargeText",
+          "name": "Large Text (~50000 char)"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "action",
+          "script": "dist.js",
+          "handler": "generatePastDate",
+          "name": "Past Date"
+        },
+        {
+          "type": "action",
+          "script": "dist.js",
+          "handler": "generateFutureDate",
+          "name": "Future Date"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "action",
+          "script": "dist.js",
+          "handler": "generateUUIDv4",
+          "name": "UUIDv4"
+        },
+        {
+          "type": "action",
+          "script": "dist.js",
+          "handler": "generateULID",
+          "name": "ULID"
+        },
+        {
+          "type": "action",
+          "script": "dist.js",
+          "handler": "generateMongoID",
+          "name": "Mongo Object ID"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "action",
+          "script": "dist.js",
+          "handler": "generateIPv4",
+          "name": "IPv4"
+        },
+        {
+          "type": "action",
+          "script": "dist.js",
+          "handler": "generateIPv6",
+          "name": "IPv6"
+        },
+        {
+          "type": "action",
+          "script": "dist.js",
+          "handler": "generateCountry",
+          "name": "Country (full name)"
+        },
+        {
+          "type": "action",
+          "script": "dist.js",
+          "handler": "generateCountryCode2",
+          "name": "Country Code (2)"
+        },
+        {
+          "type": "action",
+          "script": "dist.js",
+          "handler": "generateCountryCode3",
+          "name": "Country Code (3)"
+        },
+        {
+          "type": "action",
+          "script": "dist.js",
+          "handler": "generateCurrencyCode",
+          "name": "Currency Code"
+        }
+      ]
     }
   ]
 }

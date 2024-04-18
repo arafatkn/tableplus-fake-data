@@ -5,6 +5,7 @@
   "main": "main.js",
   "dependencies": {
     "@faker-js/faker": "^8.4.1",
+    "ulidx": "^2.3.0",
     "webpack": "5.79.0"
   },
   "devDependencies": {
