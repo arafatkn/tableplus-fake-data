@@ -4,6 +4,8 @@
 
 Using this TablePlus plugin, you will have a menu `Insert Fake Data` with various submenus in context menu.
 
+![screenshot.png](screenshot.png "screenshot")
+
 # Support
 
 TablePlus build 272 and above.

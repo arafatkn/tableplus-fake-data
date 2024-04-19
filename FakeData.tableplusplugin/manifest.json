@@ -88,6 +88,18 @@
           "name": "Future Date"
         },
         {
+          "type": "action",
+          "script": "dist.js",
+          "handler": "generatePastDateTimestamp",
+          "name": "Past Date Timestamp"
+        },
+        {
+          "type": "action",
+          "script": "dist.js",
+          "handler": "generateFutureDateTimestamp",
+          "name": "Future Date Timestamp"
+        },
+        {
           "type": "separator"
         },
         {

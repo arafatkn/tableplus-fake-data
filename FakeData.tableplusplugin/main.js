@@ -121,11 +121,21 @@ global.generateMongoID = function (context) {
 
 // Dates
 global.generatePastDate = function (context) {
-  const content = faker.date.past();
+  const content = faker.date.past().toJSON();
   setContent(context, content);
 }
 
 global.generateFutureDate = function (context) {
-  const content = faker.date.future();
+  const content = faker.date.future().toJSON();
+  setContent(context, content);
+}
+
+global.generatePastDateTimestamp = function (context) {
+  const content = faker.date.past().getTime();
+  setContent(context, content);
+}
+
+global.generateFutureDateTimestamp = function (context) {
+  const content = faker.date.future().getTime();
   setContent(context, content);
 }
