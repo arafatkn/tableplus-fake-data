@@ -1,7 +1,7 @@
 {
   "name": "Insert Fake Data",
   "identifier": "im.arafat.TablePlus.FakeData",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "detail": "This plugin helps you generate fake data using faker-js package.",
   "author": "Arafat Islam",
   "authorEmail": "me@arafat.im",
@@ -19,13 +19,13 @@
           "type": "action",
           "script": "dist.js",
           "handler": "generateInt",
-          "name": "Integer Number"
+          "name": "Integer"
         },
         {
           "type": "action",
           "script": "dist.js",
           "handler": "generateBigInt",
-          "name": "Big Integer Number"
+          "name": "Big Integer"
         },
         {
           "type": "action",
@@ -57,20 +57,32 @@
         {
           "type": "action",
           "script": "dist.js",
-          "handler": "generateSmallText",
-          "name": "Medium Text (~500 char)"
+          "handler": "generateEmail",
+          "name": "Email"
         },
         {
-          "type": "action",
-          "script": "dist.js",
-          "handler": "generateMediumText",
-          "name": "Medium Text (~5000 char)"
-        },
-        {
-          "type": "action",
-          "script": "dist.js",
-          "handler": "generateLargeText",
-          "name": "Large Text (~50000 char)"
+          "type": "submenu",
+          "name": "Text",
+          "children": [
+            {
+              "type": "action",
+              "script": "dist.js",
+              "handler": "generateSmallText",
+              "name": "Small Text (~500 char)"
+            },
+            {
+              "type": "action",
+              "script": "dist.js",
+              "handler": "generateMediumText",
+              "name": "Medium Text (~5000 char)"
+            },
+            {
+              "type": "action",
+              "script": "dist.js",
+              "handler": "generateLargeText",
+              "name": "Large Text (~50000 char)"
+            }
+          ]
         },
         {
           "type": "separator"
@@ -136,22 +148,28 @@
           "name": "IPv6"
         },
         {
-          "type": "action",
-          "script": "dist.js",
-          "handler": "generateCountry",
-          "name": "Country (full name)"
-        },
-        {
-          "type": "action",
-          "script": "dist.js",
-          "handler": "generateCountryCode2",
-          "name": "Country Code (2)"
-        },
-        {
-          "type": "action",
-          "script": "dist.js",
-          "handler": "generateCountryCode3",
-          "name": "Country Code (3)"
+          "type": "submenu",
+          "name": "Country",
+          "children": [
+            {
+              "type": "action",
+              "script": "dist.js",
+              "handler": "generateCountry",
+              "name": "Country (full name)"
+            },
+            {
+              "type": "action",
+              "script": "dist.js",
+              "handler": "generateCountryCode2",
+              "name": "Country Code (2)"
+            },
+            {
+              "type": "action",
+              "script": "dist.js",
+              "handler": "generateCountryCode3",
+              "name": "Country Code (3)"
+            }
+          ]
         },
         {
           "type": "action",

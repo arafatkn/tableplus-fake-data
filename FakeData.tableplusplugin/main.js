@@ -31,7 +31,7 @@ const setContent = function (context, content) {
 };
 
 global.generateInt = function (context) {
-  const content = faker.number.int();
+  const content = faker.number.int({ max: 1000000000 });
   setContent(context, content);
 }
 
@@ -60,18 +60,23 @@ global.generateSlug = function (context) {
   setContent(context, content);
 }
 
+global.generateEmail = function (context) {
+  const content = faker.internet.email().toLocaleLowerCase();
+  setContent(context, content);
+}
+
 global.generateSmallText = function (context) {
-  const content = faker.string.alpha({ length: { min: 100, max: 500 } });
+  const content = faker.lorem.paragraph();
   setContent(context, content);
 }
 
 global.generateMediumText = function (context) {
-  const content = faker.string.alpha({ length: { min: 1000, max: 5000 } });
+  const content = faker.lorem.paragraphs(20);
   setContent(context, content);
 }
 
 global.generateLargeText = function (context) {
-  const content = faker.string.alpha({ length: { min: 10000, max: 50000 } });
+  const content = faker.lorem.paragraphs(150);
   setContent(context, content);
 }
 
